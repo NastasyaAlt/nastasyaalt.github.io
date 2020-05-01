@@ -51,6 +51,7 @@ function addClass(el, className) {
     var el = document.querySelector(el);
       if (el.classList) {
         el.classList.add(className);
+        document.body.classList.add('modal-open');
       } else {
         el.className += ' ' + className;
       }
@@ -69,6 +70,7 @@ function removeClass(el, className) {
     var el = document.querySelector(el);
       if (el.classList) {
         el.classList.remove(className);
+         document.body.classList.remove('modal-open');
       } else {
         el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
       }
