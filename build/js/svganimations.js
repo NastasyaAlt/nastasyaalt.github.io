@@ -1,15 +1,3 @@
-/**
- * svganimations.js v1.0.0
- * http://www.codrops.com
- *
- * the svg path animation is based on http://24ways.org/2013/animating-vectors-with-svg/ by Brian Suda (@briansuda)
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
- */
 (function() {
 
 	'use strict';
@@ -88,93 +76,29 @@
 	SVGEl.prototype.showImage = function() {
 		classie.add( this.image, 'show' );
 		classie.add( this.el, 'hide' );
+		let animImg = document.querySelectorAll('.drawn-tech');
+		for (let i = 0, len = animImg.length; i < len; i++) {
+			console.log(animImg[i]);
+			setTimeout (animImg[i].classList.add('show-anim'), 1000);
+		}
 	};
 
-	function getViewportH() {
-		var client = docElem['clientHeight'],
-			inner = window['innerHeight'];
-		 
-		if( client < inner )
-			return inner;
-		else
-			return client;
-	}
- 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
- 
-	// http://stackoverflow.com/a/5598797/989439
-	/*
-	function getOffset( el ) {
-		var offsetTop = 0, offsetLeft = 0;
-		do {
-			if ( !isNaN( el.offsetTop ) ) {
-				offsetTop += el.offsetTop;
-			}
-			if ( !isNaN( el.offsetLeft ) ) {
-				offsetLeft += el.offsetLeft;
-			}
-		} while( el = el.offsetParent )
- 
-		return {
-			top : offsetTop,
-			left : offsetLeft
-		};
-	}
-	*/
- /*
-	function inViewport( el, h ) {
-		var elH = el.offsetHeight,
-			scrolled = scrollY(),
-			viewed = scrolled + getViewportH(),
-			elTop = getOffset(el).top,
-			elBottom = elTop + elH,
-			// if 0, the element is considered in the viewport as soon as it enters.
-			// if 1, the element is considered in the viewport only when it's fully inside
-			// value in percentage (1 >= h >= 0)
-			h = h || 0;
- 
-		return (elTop + elH * h) <= viewed && (elBottom) >= scrolled;
-	}
-	*/
 	function init() {
-		var svgs = Array.prototype.slice.call( document.querySelectorAll( '#main svg' ) ),
+		var svgs = Array.prototype.slice.call( document.querySelectorAll( '#main .line-drawing' ) ),
 			svgArr = new Array(),
 			didScroll = false,
 			resizeTimeout;
 
-		// the svgs already shown...
 		svgs.forEach( function( el, i ) {
 			var svg = new SVGEl( el );
 			svgArr[i] = svg;
 			setTimeout(function( el ) {
 				return function() {
 					svg.render();
-					/*
-					if( inViewport( el.parentNode ) ) {
-						svg.render();
-					}
-					*/
 				};
 			}( el ), 1000 ); 
 		} );
-/*
-		var scrollHandler = function() {
-				if( !didScroll ) {
-					didScroll = true;
-					setTimeout( function() { scrollPage(); }, 60 );
-				}
-			},
-			scrollPage = function() {
-				svgs.forEach( function( el, i ) {
-					if( inViewport( el.parentNode, 0.5 ) ) {
-						svgArr[i].render();
-					}
-				});
-				didScroll = false;
-			},
-			*/
+
 		var	resizeHandler = function() {
 				function delayed() {
 				 //	scrollPage();
@@ -186,7 +110,7 @@
 				resizeTimeout = setTimeout( delayed, 400 );
 			};
 
-//		window.addEventListener( 'scroll', scrollHandler, false );
+
 		window.addEventListener( 'resize', resizeHandler, false );
 	}
 
