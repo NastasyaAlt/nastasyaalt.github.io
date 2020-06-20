@@ -10,8 +10,6 @@ window.onload = function() {
 	const ease = easeInCubic(progress);
 
 	progress = Math.min(progress, 1);
-	console.log(startScrollOffset,startScrollOffset + (scrollEndElemTop * ease));
-
 	const newScrollOffset = startScrollOffset + (scrollEndElemTop * ease);
 	window.scroll(0, startScrollOffset + (scrollEndElemTop * ease));
 

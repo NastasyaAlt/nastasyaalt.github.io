@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon-16x16.png">
     <!-- Useful meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -14,14 +15,14 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
 
-    <script src="/js/main.js"></script>
-    <title>Home</title>
+    <script src="js/main.js"></script>
+    <title>NAlt-portfolio</title>
 </head>
 <body>
     <div class="wrapper">
     <div class="container logo-relative">
         <div class="nav-logo">
-            <a href="/"><img src="/img/logo.png"></a>
+            <a href="/"><img src="img/logo.png"></a>
         </div>
     </div>
     <header class="header">
@@ -53,7 +54,7 @@
         <div class="container">
             <div class="intro">
                 <div class="intro-title">
-                    <div class="intro-title__small">Hello! I’m Anastaiia Smychkovskaya.</div>
+                    <div class="intro-title__small">Hello! I’m Anastasiya Smychkovskaya.</div>
                     <h1 class="intro-title__big">Web Developer &
                         UI/UX Designer
                     </h1>
@@ -79,15 +80,26 @@
                         </svg>
                     </div>
                 </figure>
+
+                <div class="drawn-tech">
+                    <img src="img/js.svg">
+                </div>
+                <div class="drawn-tech">
+                    <img src="img/html.svg">    
+                </div>
+                <div class="drawn-tech">
+                    <img src="img/css.svg">
+                </div>
             </div>
                 <div class="scroll ">
                     
-                    <a class="scroll_elem" href="#about">
+                    <a class="scroll_link  scroll_elem" href="#about"></a>
+                    <div class="scroll_item">
                         scroll
                         <span></span>
                         <span></span>
                         <span></span>
-                    </a>
+                    </div>
                 </div>
             </div>
             <div class="about p-relative">
@@ -147,6 +159,9 @@ I like to solve design problems, create a smart user interface and imagine a use
                                     <li class="skills-list__item">
                                         Figma
                                     </li>
+									<li class="skills-list__item">
+                                        ProtoPie
+                                    </li>
                                </ul>
                             </div>
                             <div class="about-skiils__col">
@@ -176,7 +191,7 @@ I like to solve design problems, create a smart user interface and imagine a use
                
                 <div class="portfolio-item">
                     <a  onclick="addClass('.portfolio-geo', 'open')" class="portfolio-link">
-                        <img src="/img/mini/geo.png" alt="">
+                        <img src="img/mini/geo.png" alt="">
                         <div class="overlay">
                           
                             <h2>geoprostir.gki.com.ua</h2>
@@ -185,24 +200,34 @@ I like to solve design problems, create a smart user interface and imagine a use
                     </a>
                 </div>
                 <div class="portfolio-item">
+                    <a  onclick="addClass('.portfolio-metrograd', 'open')" class="portfolio-link">
+                        <img src="img/mini/metrograd.png" alt="">
+                        <div class="overlay">
+                          
+                            <h2>metrograd</h2>
+                        
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item">
                     <a class="portfolio-link" onclick="addClass('.portfolio-chernigiv', 'open')" >
-                    <img src="/img/mini/chernigiv.png" alt="">
+                    <img src="img/mini/harkiv.jpg" alt="">
                     <div class="overlay">   
-                            <h2>chernigiv</h2>
+                            <h2>uga-obl.kharkov.ua</h2>
                         </div>
                     </a>
                 </div>
                 <div class="portfolio-item">
                     <a class="portfolio-link" onclick="addClass('.portfolio-mariupol', 'open')">
-                    <img src="/img/mini/mariupol.png" alt="">
+                    <img src="img/mini/mariupol.jpg" alt="">
                     <div class="overlay">   
-                            <h2>mariupol</h2>
+                            <h2>gis.mariupolrada.gov.ua</h2>
                         </div>
                     </a>
                 </div>
                 <div class="portfolio-item">
                     <a class="portfolio-link" onclick="addClass('.portfolio-slavutska', 'open')">
-                    <img src="/img/mini/slavutska.png" alt="">
+                    <img src="img/mini/slavutska.png" alt="">
                     <div class="overlay">   
                             <h2>slavutska.otg.ua</h2>
                         </div>
@@ -210,7 +235,7 @@ I like to solve design problems, create a smart user interface and imagine a use
                 </div>
                 <div class="portfolio-item">
                     <a class="portfolio-link" onclick="addClass('.portfolio-codr', 'open')">
-                    <img src="/img/mini/codr.png" alt="">
+                    <img src="img/mini/codr.png" alt="">
                     <div class="overlay">   
                             <h2>codr</h2>
                     </div>
@@ -235,7 +260,15 @@ I like to solve design problems, create a smart user interface and imagine a use
                             <svg height="25" viewBox="0 0 511 511.9" width="25" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
                         </a>
                     </li>
-                    <li class="footer-social__item">
+
+					 <li class="footer-social__item">
+                        <a class="footer-social__link" href="https://dribbble.com/NAlt" target="_blank">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="25" height="25" class=""><g><path d="M256,0C115.04,0,0,115.05,0,256c0,140.96,115.05,256,256,256c140.96,0,256-115.05,256-256C512,115.04,396.95,0,256,0z   M429.64,111.51c31.96,38.34,51.47,87.39,52.31,140.89c-40.06-9.37-84.55-10-129.86-1.74c-11.79,2.15-23.58,4.88-35.3,8.16  c-3.9-10.61-8.04-21.13-12.44-31.55c-4.49-10.63-9.23-21.08-14.19-31.38C344.15,175.27,402.65,144.57,429.64,111.51z M256,30  c58.82,0,112.45,22.59,152.7,59.54C393,110.95,348.26,142.12,276.48,169c-25.06-46.66-55.11-89.54-89.83-128.1  C208.51,33.83,231.82,30,256,30z M156.95,52.9c35.41,37.93,65.87,80.29,90.96,126.05c-74.68,24.17-150.29,34.03-212.46,27.66  C50.59,138.96,96.14,82.67,156.95,52.9z M30,256c0-6.64,0.31-13.21,0.87-19.7c13.72,1.45,28.03,2.18,42.82,2.18  c58.33,0,123.86-11.22,188.21-32.53c9.82,20.1,18.65,40.78,26.44,61.97c-25.09,9.02-49.51,20.49-72.44,34.14  c-56.22,33.47-97.35,76.53-114.41,118.71C57.52,379.51,30,320.91,30,256z M256,482c-48.29,0-93.09-15.23-129.86-41.14  c11.4-38.52,49.96-80.19,105.11-113.02c19.43-11.58,42.15-22.49,66.88-31.36c17.53,55.1,28.27,113.26,31.68,173.13  C306.67,477.63,281.84,482,256,482z M359.07,457.1c-4.16-58.32-15.02-115.1-32.45-169.64c48.6-13.36,102.58-17.84,153.77-4.56  C471.33,358.91,424.41,423.47,359.07,457.1z" data-original="#ffffff" class="active-path" style="fill:#ffffff"></path></g> </svg>
+						   
+						</a>
+                    </li>
+					
+					                    <li class="footer-social__item">
                         <a class="footer-social__link" href="https://www.linkedin.com/in/anastasiya-smychkovskaya-644472106/" target="_blank">
                             <svg id="Bold" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
                         </a>
@@ -244,28 +277,19 @@ I like to solve design problems, create a smart user interface and imagine a use
             </div>
             <div class="footer-contact__item">
                 <h4 class="footer-title">Thank you for watching</h4>
+                <h5>©2020 Anastasiya Smychkovskaya.  All rights reserved. </h5>
             </div>
             </div>    
         </div>
     </footer>
         <div class="modal-portfolio portfolio-geo">
             <a class="close" onclick="removeClass('.portfolio-geo', 'open')">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-
-                <g>
-                    <g>
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-                L284.286,256.002z"/>
-                    </g>
-                </g>
-                </svg>
+                  <div class="inner-close">
+                    <label>Back</label>
+                  </div>
             </a>
        
-            <div class="modal-body">
+            <div class="modal-body container">
             <div class="modal-project-img">
                 <div class="modal-img__back" style="background-image: url(img/max/geoprostir.png);">
                 </div>
@@ -284,36 +308,29 @@ I like to solve design problems, create a smart user interface and imagine a use
                 <div class="about-skiils__col">
                    <h4 class="subtitle">Details</h4>  
                    <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    A series of scientific and practical activities.
+                    Conference on the topic: "Implementation of GIS urban cadastre on Open Surce products"
                    </div>
                 </div>
 
                 <div class="modal-project__link">
                     <a class="modal-link" target="_blank" href="http://geoprostir.gki.com.ua/"><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
+                    <a class="modal-link" target="_blank" href="https://www.facebook.com/events/776247986196241/?active_tab=discussion"><span class="modal-link__text">Facebook page</span><span class="modal-link__figure"></span></a>
                 </div>
             </div>   
         </div>
 
-        <div class="modal-portfolio portfolio-chernigiv">
-            <a class="close" onclick="removeClass('.portfolio-chernigiv', 'open')">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
 
-                <g>
-                    <g>
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-                L284.286,256.002z"/>
-                    </g>
-                </g>
-                </svg>
+ <div class="modal-portfolio portfolio-metrograd">
+            <a class="close" onclick="removeClass('.portfolio-metrograd', 'open')">
+                  <div class="inner-close">
+                    <label>Back</label>
+                  </div>
             </a>
        
-            <div class="modal-body">
+            <div class="modal-body container">
             <div class="modal-project-img">
-                <div class="modal-img__back" style="background-image: url(img/max/chernigiv.png);">
+                <div class="modal-img__back" style="background-image: url(img/max/metrograd.png);">
                 </div>
             </div>
             <div class="modal-project-detail">
@@ -330,34 +347,62 @@ I like to solve design problems, create a smart user interface and imagine a use
                 <div class="about-skiils__col">
                    <h4 class="subtitle">Details</h4>  
                    <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Metrograd - shopping mall in the center of Kyiv.
+
+
                    </div>
                 </div>
 
                 <div class="modal-project__link">
-                    <a class="modal-link" target="_blank" href=""><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
+                    <a class="modal-link" target="_blank" href="http://metrograd.local.softpro.ua/"><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
+                </div>
+            </div>   
+        </div>
+
+        <div class="modal-portfolio portfolio-chernigiv">
+            <a class="close" onclick="removeClass('.portfolio-chernigiv', 'open')">
+                  <div class="inner-close">
+    <label>Back</label>
+  </div>
+            </a>
+       
+            <div class="modal-body container">
+            <div class="modal-project-img">
+                <div class="modal-img__back" style="background-image: url(img/max/harkiv.png);">
+                </div>
+            </div>
+            <div class="modal-project-detail">
+                <div class="about-project">
+                    <div class="about-skiils__col">
+                       <h4 class="subtitle">Project</h4>  
+                       <ul class="skills-list">
+                            <li class="skills-list__item">
+                                Web Design, HTML-coding</li>
+                            </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="about-skiils__col">
+                   <h4 class="subtitle">Details</h4>  
+                   <div>
+                    A geoportal is a type of web portal used to find and access geographic information and associated geographic services via the Internet. Geoportals are important for effective use of geographic information systems and a key element of Spatial Data Infrastructure.
+                   </div>
+                </div>
+
+                <div class="modal-project__link">
+                    <a class="modal-link" target="_blank" href="http://uga-obl.kharkov.ua/"><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
                 </div>
             </div>   
         </div>
 
         <div class="modal-portfolio portfolio-slavutska">
             <a class="close" onclick="removeClass('.portfolio-slavutska', 'open')">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-
-                <g>
-                    <g>
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-                L284.286,256.002z"/>
-                    </g>
-                </g>
-                </svg>
+                  <div class="inner-close">
+    <label>Back</label>
+  </div>
             </a>
        
-            <div class="modal-body">
+            <div class="modal-body container">
             <div class="modal-project-img">
                 <div class="modal-img__back" style="background-image: url(img/max/slavutska.png);">
                 </div>
@@ -376,7 +421,7 @@ I like to solve design problems, create a smart user interface and imagine a use
                 <div class="about-skiils__col">
                    <h4 class="subtitle">Details</h4>  
                    <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Geoportal of the town-planning cadastre of the Slavutych city united territorial community
                    </div>
                 </div>
 
@@ -388,22 +433,12 @@ I like to solve design problems, create a smart user interface and imagine a use
 
         <div class="modal-portfolio portfolio-mariupol">
             <a class="close" onclick="removeClass('.portfolio-mariupol', 'open')">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-
-                <g>
-                    <g>
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-                L284.286,256.002z"/>
-                    </g>
-                </g>
-                </svg>
+                  <div class="inner-close">
+    <label>Back</label>
+  </div>
             </a>
        
-            <div class="modal-body">
+            <div class="modal-body container">
             <div class="modal-project-img">
                 <div class="modal-img__back" style="background-image: url(img/max/mariupol.png);">
                 </div>
@@ -422,34 +457,24 @@ I like to solve design problems, create a smart user interface and imagine a use
                 <div class="about-skiils__col">
                    <h4 class="subtitle">Details</h4>  
                    <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                   Official geoportal of Mariupol City Council
                    </div>
                 </div>
 
                 <div class="modal-project__link">
-                    <a class="modal-link" target="_blank" href=""><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
+                    <a class="modal-link" target="_blank" href="https://gis.mariupolrada.gov.ua/"><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
                 </div>
             </div>   
         </div>
 
         <div class="modal-portfolio portfolio-codr">
             <a class="close" onclick="removeClass('.portfolio-codr', 'open')">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
-
-                <g>
-                    <g>
-                    <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
-                L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
-                c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
-                l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
-                L284.286,256.002z"/>
-                    </g>
-                </g>
-                </svg>
+                  <div class="inner-close">
+    <label>Back</label>
+  </div>
             </a>
        
-            <div class="modal-body">
+            <div class="modal-body container">
             <div class="modal-project-img">
                 <div class="modal-img__back" style="background-image: url(img/max/codr.png);">
                 </div>
@@ -468,12 +493,12 @@ I like to solve design problems, create a smart user interface and imagine a use
                 <div class="about-skiils__col">
                    <h4 class="subtitle">Details</h4>  
                    <div>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    The Municipal Enterprise “Center for Traffic Organization” (KP CDR) belongs to the sphere of management of the executive body of the Kyiv City Council - Kyiv City State Administration - and is subordinated to the Department of Transport Infrastructure of the Kyiv City State Administration.
                    </div>
                 </div>
 
                 <div class="modal-project__link">
-                    <a class="modal-link" target="_blank" href=""><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
+                    <a class="modal-link" target="_blank" href="http://codr_demo.local.softpro.ua/"><span class="modal-link__text">Web-site</span><span class="modal-link__figure"></span></a>
                 </div>
             </div>   
         </div>
@@ -482,7 +507,7 @@ I like to solve design problems, create a smart user interface and imagine a use
     </div>   
 </div>
  
-    <script src="/js/classie.js"></script>
-    <script src="/js/svganimations.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/svganimations.js"></script>
 </body>
 </html>

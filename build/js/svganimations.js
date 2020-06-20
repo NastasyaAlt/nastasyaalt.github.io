@@ -78,7 +78,6 @@
 		classie.add( this.el, 'hide' );
 		let animImg = document.querySelectorAll('.drawn-tech');
 		for (let i = 0, len = animImg.length; i < len; i++) {
-			console.log(animImg[i]);
 			setTimeout (animImg[i].classList.add('show-anim'), 1000);
 		}
 	};
